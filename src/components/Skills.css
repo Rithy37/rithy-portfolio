@@ -1,0 +1,53 @@
+.coverage-table {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 24px;
+}
+
+.coverage-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr 48px;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.coverage-row:last-child {
+  border-bottom: none;
+}
+
+.coverage-name {
+  color: var(--text);
+}
+
+.coverage-bar-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  overflow: hidden;
+}
+
+.coverage-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-teal-dim), var(--accent-teal));
+}
+
+.coverage-pct {
+  color: var(--text-muted);
+  text-align: right;
+}
+
+@media (max-width: 560px) {
+  .coverage-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 14px 0;
+  }
+  .coverage-pct {
+    text-align: left;
+  }
+}
