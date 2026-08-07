@@ -49,7 +49,7 @@ function Contact() {
       <p className="section-label">contact.spec</p>
       <h2 className="section-title">Get in touch</h2>
       <p className="section-intro">
-        Open to test analyst, SDET, or frontend roles — reach out below.
+        Open to Test Analyst, Test Automation Engineer, or Junior Dev roles, reach out below <span>&#128588;</span>
       </p>
 
       <form

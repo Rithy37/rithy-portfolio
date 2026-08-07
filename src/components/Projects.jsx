@@ -19,24 +19,24 @@ const PROJECTS = [
     linkLabel: 'View repo',
   },
   {
-    id: 'placeholder-frontend',
-    name: '[Replace] Frontend Project',
+    id: 'nzqa-learner-portal',
+    name: 'Professional Enterprise Frontend Development',
     description:
-      'Swap this card for a real frontend project — the app you built during your 1.5 years as a frontend developer, or something new.',
+      'Contributed to the frontend development of the new Learner & Education Provider portal at NZQA, building new features, fixing defects, and improving the user experience as part of an Agile team.',
     tags: ['frontend'],
-    status: 'DRAFT',
-    url: '',
-    linkLabel: 'Add link',
+    status: 'Private Enterprise Project',
+    url: 'https://www2.nzqa.govt.nz/',
+    linkLabel: 'Visit NZQA Website',
   },
   {
-    id: 'placeholder-automation',
-    name: '[Replace] Cypress or Selenium Suite',
+    id: 'test-automation',
+    name: 'Professional Enterprise Test Automation',
     description:
-      'Swap this card for a Cypress or Selenium project from your test analyst work, or a fresh one built to show range beyond Playwright.',
+      'Enhanced and maintained Cypress and Selenium automation suites for enterprise web applications at NZQA. Built automated regression tests, maintained existing test cases, and collaborated with developers to improve software quality. The project is private and cannot be shared publicly.',
     tags: ['automation'],
-    status: 'DRAFT',
-    url: '',
-    linkLabel: 'Add link',
+    status: 'Private Enterprise Project',
+    url: 'https://www2.nzqa.govt.nz/',
+    linkLabel: 'Visit NZQA Website',
   },
 ]
 
@@ -53,7 +53,7 @@ function Projects() {
       <p className="section-label">projects.spec</p>
       <h2 className="section-title">Test suite: projects</h2>
       <p className="section-intro">
-        Filter by category — same idea as tagging tests by suite.
+        Filter by category, same idea as tagging tests by suite <span>&#128516;</span>
       </p>
 
       <div className="project-filters mono" data-test="project-filters">
