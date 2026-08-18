@@ -24,14 +24,40 @@ function Contact() {
     return nextErrors
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const nextErrors = validate()
-    setErrors(nextErrors)
-    if (Object.keys(nextErrors).length === 0) {
+  const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  const nextErrors = validate()
+  setErrors(nextErrors)
+
+  if (Object.keys(nextErrors).length > 0) return
+
+  try {
+    const response = await fetch('https://formspree.io/f/xvkpvpzb', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: values.name,
+        email: values.email,
+        message: values.message,
+        _subject: 'New portfolio message',
+        _replyto: values.email
+      })
+    })
+
+    if (response.ok) {
       setSubmitted(true)
+      setValues({ name: '', email: '', message: '' })
+    } else {
+      alert('Something went wrong. Please try again.')
     }
+  } catch (error) {
+    alert('Failed to send message. Please try again later.')
   }
+}
 
   if (submitted) {
     return (

@@ -3,7 +3,7 @@ import './Hero.css'
 
 const ASSERTIONS = [
   '3.5 years as a Test Analyst',
-  'Cypress · Selenium · Playwright',
+  'Manual and Automation Testing experience',
   '1.5 years as a Frontend Developer',
 ]
 
@@ -26,7 +26,7 @@ function Hero() {
         <div className="hero-copy">
           <p className="section-label">RUNNING hero.spec.js</p>
           <h1 className="hero-title">
-            I build things,<br />then prove they work.
+            From testing to development,<br />I’m all about building better software.
           </h1>
           <p className="hero-subtitle">
             Test analyst and frontend developer. I write the automation

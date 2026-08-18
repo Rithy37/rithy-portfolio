@@ -5,14 +5,25 @@ const FILTERS = [
   { id: 'all', label: 'all' },
   { id: 'automation', label: 'automation' },
   { id: 'frontend', label: 'frontend' },
+  { id: 'manual', label: 'manual testing' },
 ]
 
 const PROJECTS = [
   {
+    id: 'manual-testing',
+    name: 'Manual Testing Experience',
+    description:
+      'Hands-on experience across functional, integration, regression, system and UAT testing for enterprise applications. I design and execute test cases, validate business requirements, investigate defects, and perform data validation using SQL. I have also tested AWS-integrated services including Lambda, Step Functions, DynamoDB, S3 and CloudWatch to validate end-to-end application workflows and integrations.',
+    tags: ['manual'],
+    status: 'Private Enterprise Project',
+    url: 'https://www2.nzqa.govt.nz/',
+    linkLabel: 'Visit NZQA Website',
+  },
+  {
     id: 'playwright-suite',
     name: 'Playwright E2E Suite',
     description:
-      'Page-Object-Model test suite covering login, cart, and checkout flows, with CI running the suite on every push via GitHub Actions.',
+      'Page-Object-Model test suite covering login, cart, and checkout flows, with CI running the suite on every push via GitHub Actions. Please note that this is an on-going learning project',
     tags: ['automation'],
     status: 'PASSING',
     url: 'https://github.com/Rithy37/playWrightProject',
