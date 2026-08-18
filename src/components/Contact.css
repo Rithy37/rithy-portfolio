@@ -17,7 +17,7 @@
 
 .form-field label {
   font-size: 0.8rem;
-  color: var(--accent-teal);
+  color: var(--accent-blue);
 }
 
 .form-field input,
@@ -35,7 +35,7 @@
 
 .form-field input:focus,
 .form-field textarea:focus {
-  border-color: var(--accent-teal);
+  border-color: var(--accent-blue);
   outline: none;
 }
 

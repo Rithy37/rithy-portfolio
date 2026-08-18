@@ -20,16 +20,6 @@ const PROJECTS = [
     linkLabel: 'Visit NZQA Website',
   },
   {
-    id: 'playwright-suite',
-    name: 'Playwright E2E Suite',
-    description:
-      'Page-Object-Model test suite covering login, cart, and checkout flows, with CI running the suite on every push via GitHub Actions. Please note that this is an on-going learning project',
-    tags: ['automation'],
-    status: 'PASSING',
-    url: 'https://github.com/Rithy37/playWrightProject',
-    linkLabel: 'View repo',
-  },
-  {
     id: 'nzqa-learner-portal',
     name: 'Professional Enterprise Frontend Development',
     description:
@@ -49,6 +39,16 @@ const PROJECTS = [
     url: 'https://www2.nzqa.govt.nz/',
     linkLabel: 'Visit NZQA Website',
   },
+  {
+    id: 'playwright-suite',
+    name: 'Playwright E2E Suite',
+    description:
+      'Page-Object-Model test suite covering login, cart, and checkout flows, with CI running the suite on every push via GitHub Actions. Please note that this is an on-going learning project.',
+    tags: ['automation'],
+    status: 'Personal Project',
+    url: 'https://github.com/Rithy37/playWrightProject',
+    linkLabel: 'View repo',
+  },
 ]
 
 function Projects() {
@@ -64,7 +64,7 @@ function Projects() {
       <p className="section-label">projects.spec</p>
       <h2 className="section-title">Test suite: projects</h2>
       <p className="section-intro">
-        Filter by category, same idea as tagging tests by suite <span>&#128516;</span>
+        Filter by category, same idea as tagging tests by suite
       </p>
 
       <div className="project-filters mono" data-test="project-filters">
@@ -92,7 +92,7 @@ function Projects() {
             <div className="project-card-top">
               <span
                 className={`project-status mono ${
-                  project.status === 'PASSING' ? 'passing' : 'draft'
+                  project.status === 'Personal Project' ? 'passing' : 'draft'
                 }`}
                 data-test="project-status"
               >

@@ -21,14 +21,14 @@
 }
 
 .filter-btn:hover {
-  border-color: var(--accent-teal);
+  border-color: var(--accent-blue);
   color: var(--text);
 }
 
 .filter-btn.active {
-  background: var(--accent-teal);
-  border-color: var(--accent-teal);
-  color: #0a1210;
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -70,8 +70,8 @@
 }
 
 .project-status.draft {
-  background: rgba(240, 168, 62, 0.12);
-  color: var(--accent-amber);
+  background: var(--bg);
+  color: var(--accent-blue);
 }
 
 .project-name {

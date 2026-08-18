@@ -1,22 +1,24 @@
 :root {
   /* Color tokens */
-  --bg: #12161d;
-  --surface: #1a212b;
-  --surface-alt: #202836;
-  --border: #2a3244;
-  --text: #e7eaf0;
-  --text-muted: #8b93a6;
-  --accent-teal: #2dd4bf;
-  --accent-teal-dim: #1b8f80;
-  --accent-amber: #f0a83e;
-  --accent-rose: #f2617a;
+  --bg: #f3f6fa;
+  --surface: #ffffff;
+  --surface-alt: #eceef2;
+  --border: #dde1e7;
+  --text: #172033;
+  --text-muted: #111827;
+  --accent-blue: #2563eb;
+  --accent-blue-dim: #1d4ed8;
+  --accent-teal: #0d9488;
+  --accent-teal-dim: #0b7c72;
+  --accent-amber: #b45309;
+  --accent-rose: #dc2626;
 
   /* Type tokens */
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 * {
@@ -31,6 +33,7 @@ html {
   html {
     scroll-behavior: auto;
   }
+
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -47,7 +50,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-display);
   font-weight: 600;
   line-height: 1.15;
@@ -76,7 +81,7 @@ button {
 .section-label {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--accent-teal);
+  color: var(--accent-blue);
   letter-spacing: 0.02em;
   margin-bottom: 12px;
   display: flex;
@@ -89,8 +94,8 @@ button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent-teal);
-  box-shadow: 0 0 8px var(--accent-teal);
+  background: var(--accent-blue);
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
 }
 
 .section-title {
@@ -119,20 +124,20 @@ button {
 }
 
 .btn:hover {
-  border-color: var(--accent-teal);
+  border-color: var(--accent-blue);
   transform: translateY(-1px);
 }
 
 .btn-primary {
-  background: var(--accent-teal);
-  color: #0a1210;
-  border-color: var(--accent-teal);
+  background: var(--accent-blue);
+  color: #ffffff;
+  border-color: var(--accent-blue);
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: var(--accent-teal-dim);
-  border-color: var(--accent-teal-dim);
+  background: var(--accent-blue-dim);
+  border-color: var(--accent-blue-dim);
 }
 
 .btn:focus-visible,
@@ -140,6 +145,6 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--accent-teal);
+  outline: 2px solid var(--accent-blue);
   outline-offset: 2px;
 }
