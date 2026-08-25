@@ -83,8 +83,13 @@
   .nav-links-mobile {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     max-height: 0;
     overflow: hidden;
+    background: var(--bg);
     transition: max-height 0.25s ease;
     border-top: 1px solid transparent;
   }

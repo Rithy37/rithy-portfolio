@@ -27,7 +27,7 @@ const SKILL_GROUPS = [
 
 export default function Skills() {
   return (
-    <section className="skills-section">
+    <section id="skills" className="skills-section section">
       <div className="skills-eyebrow">
         <span className="skills-dot" />
         skills.spec

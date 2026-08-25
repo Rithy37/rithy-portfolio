@@ -13,6 +13,9 @@
   --accent-amber: #b45309;
   --accent-rose: #dc2626;
 
+  /* Layout tokens */
+  --nav-height: 64px;
+
   /* Type tokens */
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -76,6 +79,7 @@ button {
   max-width: 1080px;
   margin: 0 auto;
   padding: 96px 32px;
+  scroll-margin-top: var(--nav-height);
 }
 
 .section-label {
